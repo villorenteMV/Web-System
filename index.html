@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Legends Fan Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mobile Legends Universe</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Explore the Mobile Legends World</h2>
+        <p>Immerse yourself in epic battles and legendary heroes!</p>
+        <div class="hero-gallery">
+            <h3>Featured Heroes</h3>
+            <div class="heroes">
+                <img src="qq.png" alt="Hero 1" class="hero" onclick="showHeroInfo('Hero 1')">
+                <img src="pp.png" alt="Hero 2" class="hero" onclick="showHeroInfo('Hero 2')">
+                <img src="nn.png" alt="Hero 3" class="hero" o nclick="showHeroInfo('Hero 3')">
+                <img src="vv.png" alt="Hero 4" class="hero" onclick="showHeroInfo('Hero 4')">
+                <img src="90.png" alt="Hero 5" class="hero" onclick="showHeroInfo('Hero 5')">
+            </div>
+        </div>
+        <div id="hero-info"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Mobile Legends</h2>
+        <p>Mobile Legends: Bang Bang is an online multiplayer battle arena game where players fight in intense 5v5 battles, using a variety of powerful heroes.</p>
+        <div class="about-video">
+            <video width="640" height="360" controls alt="Mobile Legends Arena">
+                <source src="Mobile Legends_ Bang Bang - Gameplay Walkthrough Part 1 (iOS, Android).mp4" type="video/mp4"> 
+            </video>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Let us know!</p>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mobile Legends Fan Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+<style>
+    /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('mmm.jpg');
+    background-size: cover;
+    color: #080808;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background-color: rgb(41, 40, 110);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(51, 31, 160, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(8, 0, 126);
+}
+
+/* Home Section */
+.hero-gallery {
+    margin-top: 20px;
+}
+
+.heroes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hero:hover {
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#hero-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(233, 233, 233, 0.8);
+    border-radius: 5px;
+    display: none;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Form Styles */
+form {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #321e69;
+    color: #0f0f0f;
+}
+
+form input[type="submit"] {
+    background-color: #e3e7eb;
+    cursor: pointer;
+}
+</style>
